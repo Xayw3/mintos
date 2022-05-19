@@ -15,6 +15,7 @@ const CurrenciesList = () => {
           data.map((el) => (el.checked ? (
             <CurrenciesItem
               title={el.name}
+              key={el.id}
               clickHandle={() => {
                 setData(data.map((item) => (el.id === item.id ? { ...item, checked: !item.checked } : item)));
               }}
@@ -27,6 +28,7 @@ const CurrenciesList = () => {
           data.map((el) => (
             <CurrenciesCheckbox
               title={el.name}
+              key={el.id}
               label={el.name}
               className={el.checked ? 'bg-white' : ''}
               checked={el.checked}
