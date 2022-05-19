@@ -1,0 +1,19 @@
+.currencies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.currencies-wrapper {
+    max-width: 360px;
+    padding: 10px;
+    border: 1px solid #333;
+    margin: 20px;
+}
+
+.checked-items {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
